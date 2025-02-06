@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,10 @@
       <script src="https://kit.fontawesome.com/b2f22ffb66.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar bg-base-100">
         <div class="flex-1">
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost text-xl">Techify</a>
         </div>
         <div class="flex-none gap-2">
           <div class="form-control">
@@ -50,9 +51,141 @@
               </li>
               <li><a>Settings</a></li>
               <li><a>Logout</a></li>
+              <li><input type="checkbox" value="synthwave" class="toggle theme-controller" /></li>
             </ul>
           </div>
         </div>
-      </div>
+    </div>
+    <!-- Hero -->
+     <section class="flex justify-between bg-gradient-to-br from-[#0a0f1d] via-[#1a1e38] to-[#2d1b4b]">
+        <div class="mx-auto my-auto text-white">
+            <h1 class="font-bold text-xl py-2 lg:py-7 lg:text-3xl">Insights, Ideas, and Innovation</h1>
+            <p class="font-semibold text-base py-2 lg:py-7 lg:text-xl">Explore thought-provoking articles on technology, coding, and creativity. Stay inspired, stay ahead.</p>
+            <button class="btn btn-outline py-2 lg:my-7 btn-secondary">Read Articles</button>
+        </div>
+        <div class="flex justify-center">
+            <img src="images/bg.jpg" alt="">
+        </div>
+     </section>
+    <!-- Featured Articles -->
+    <section class="mt-10 px-4">
+        <h1 class="text-3xl font-bold text-center mb-8">Featured Articles</h1>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Article 1 -->
+            <div class="card bg-base-100 shadow-2xl flex flex-col">
+                <figure class="h-48 w-full">
+                    <img class="w-full h-full object-cover" src="images/ai.jpg" alt="AI Coding" />
+                </figure>
+                <div class="card-body flex flex-col">
+                    <h2 class="card-title text-lg font-semibold">The Rise of AI-Powered Coding: Will Developers Be Replaced?</h2>
+                    <p class="text-gray-600">AI tools like GitHub Copilot and ChatGPT are transforming how developers code. But does this mean human programmers will become obsolete?</p>
+                    <div class="card-actions mt-auto">
+                        <button class="btn btn-primary w-full">Explore</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Article 2 -->
+            <div class="card bg-base-100 shadow-2xl flex flex-col">
+                <figure class="h-48 w-full">
+                    <img class="w-full h-full object-cover" src="images/qc.jpg" alt="Quantum Computing" />
+                </figure>
+                <div class="card-body flex flex-col">
+                    <h2 class="card-title text-lg font-semibold">Quantum Computing: The Next Big Leap in Technology</h2>
+                    <p class="text-gray-600">Quantum computers promise to solve problems that classical computers can't. But how do they work, and what breakthroughs can we expect?</p>
+                    <div class="card-actions mt-auto">
+                        <button class="btn btn-primary w-full">Explore</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Article 3 -->
+            <div class="card bg-base-100 shadow-2xl flex flex-col">
+                <figure class="h-48 w-full">
+                    <img class="w-full h-full object-cover" src="images/web3.jpg" alt="Web3" />
+                </figure>
+                <div class="card-body flex flex-col">
+                    <h2 class="card-title text-lg font-semibold">Why Web3 is More Than Just a Buzzword</h2>
+                    <p class="text-gray-600">Blockchain, decentralized apps, and smart contracts are reshaping the internet. But is Web3 truly the future, or just a passing trend?</p>
+                    <div class="card-actions mt-auto">
+                        <button class="btn btn-primary w-full">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories -->
+     <section>
+        <h1 class="text-3xl font-bold text-center mb-8">Categories</h1>
+        <div class="container mx-auto">
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Artificial Intelligence</div>
+                <div class="collapse-content">
+                  <p>AI is transforming industries with innovations in machine learning, deep learning, and automation. From self-driving cars to AI-generated art, explore how artificial intelligence is shaping our future.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Web Development</div>
+                <div class="collapse-content">
+                  <p>Web development is evolving rapidly with new frameworks like Next.js, Svelte, and Astro. Learn about frontend, backend, and full-stack trends to build modern, efficient web applications.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Gadgets & Technology</div>
+                <div class="collapse-content">
+                  <p>From smartwatches to AI-powered drones, gadgets continue to redefine convenience and efficiency. Check out the latest innovations in consumer electronics and tech accessories.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Cybersecurity</div>
+                <div class="collapse-content">
+                  <p>With rising cyber threats, cybersecurity is more important than ever. Learn about ethical hacking, encryption, and how to protect your digital assets from cyberattacks.</p>
+                </div>
+              </div>
+        </div>
+     </section>
+    <!-- Footer -->
+    <footer class="mt-10 footer bg-base-200 text-base-content p-10">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item" />
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+    
 </body>
 </html>
